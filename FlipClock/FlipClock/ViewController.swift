@@ -9,17 +9,30 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    /// 时钟视图
+    private lazy var flipClock: FlipClockView = {
+        let flip = FlipClockView(frame: self.view.bounds)
+        flip.backgroundColor = .white
+        flip.date = Date()
+        return flip
+    }()
+    
+    /// 定时器
+    var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.addSubview(flipClock)
+        
+        // 创建Timer对象
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimeLabel), userInfo: nil, repeats: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    /// 定时器的监听事件
+    @objc private func updateTimeLabel() {
+        let timeDate = Date()
+        flipClock.date = timeDate
     }
-
-
 }
-
