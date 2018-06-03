@@ -171,12 +171,12 @@ extension FlipClockLabel {
     
     /// 开始动画
     private func start() {
-        link.add(to: RunLoop.main, forMode: .commonModes)
+        link.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
     }
     
     /// 停止动画
     private func stop() {
-        link.remove(from: RunLoop.main, forMode: .commonModes)
+        link.remove(from: RunLoop.main, forMode: RunLoop.Mode.common)
     }
     
 }
