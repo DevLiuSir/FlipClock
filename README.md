@@ -4,8 +4,8 @@
 <p align="center"> <b>FlipClock It's a minimalist page-turning clock. </b></p>
 
 ![language](https://img.shields.io/badge/language-swift-orange.svg)
-[![Swift  4.0](https://img.shields.io/badge/swift-4.0.3+-blue.svg?style=flat)](https://developer.apple.com/swift/)
-![xcode version](https://img.shields.io/badge/xcode-9+-brightgreen.svg)
+[![Swift  4.0](https://img.shields.io/badge/swift-4.2+-blue.svg?style=flat)](https://developer.apple.com/swift/)
+![xcode version](https://img.shields.io/badge/xcode-10+-brightgreen.svg)
 ![build](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)
 ![platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)
 ![https://github.com/ChinaHackers/FlipClock/blob/master/LICENSE](https://img.shields.io/github/license/ChinaHackers/FlipClock.svg)
