@@ -15,6 +15,11 @@ private let NextLabelStartValue: CGFloat = 0.01
 
 class FlipClockLabel: UIView {
 
+    //MARK: Attribute
+    
+    /// 动画执行进度
+    var animateValue: CGFloat = 0.0
+    
     /// 字体
     var font: UIFont? {
         didSet {
@@ -32,7 +37,18 @@ class FlipClockLabel: UIView {
             nextLabel.textColor = textColor
         }
     }
-
+    
+    /// 文字对齐方式 （默认，居左对齐）
+    var textAlignment: NSTextAlignment = .left {
+        didSet {
+            timeLabel.textAlignment = textAlignment
+            foldLabel.textAlignment = textAlignment
+            nextLabel.textAlignment = textAlignment
+        }
+    }
+    
+    //MARK: Lazy loading
+    
     /// 当前时间label
     private lazy var timeLabel: UILabel = {
         let timeLabel = UILabel()
@@ -68,19 +84,19 @@ class FlipClockLabel: UIView {
         
     }()
     
-    /// 动画执行进度
-    var animateValue: CGFloat = 0.0
-    
-    // MARK: - 初始化方法
+    // MARK: - Initialization
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         configUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+// MARK: - Lifecycle
+extension FlipClockLabel {
     
     /** 布局尺寸必须在 layoutSubViews 中, 否则获取的 size 不正确 **/
     override func layoutSubviews() {
@@ -92,8 +108,7 @@ class FlipClockLabel: UIView {
     }
 }
 
-
-// MARK: - custom method
+// MARK: - Configuration
 extension FlipClockLabel {
     
     /// 配置UI
@@ -108,12 +123,11 @@ extension FlipClockLabel {
     ///
     /// - Parameter label: UILabel
     private func configLabel(_ label: UILabel) {
-        label.textAlignment = .center
-        label.textColor = UIColor(red: 186 / 255.0, green: 183 / 255.0, blue: 186 / 255.0, alpha: 1)
-        // PingFangSC-Semibold: 苹方-简 中粗体
-        label.font = UIFont(name: "PingFangSC-Semibold", size: 150)
+        //label.textAlignment = .center
+        label.textColor = UIColor.lightText
+        label.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 200)
         label.layer.masksToBounds = true
-        label.backgroundColor = UIColor(red: 46 / 255.0, green: 43 / 255.0, blue: 46 / 255.0, alpha: 1)
+        label.backgroundColor = #colorLiteral(red: 0.06778538942, green: 0.06845653189, blue: 0.06845653189, alpha: 1)
     }
 
     /// 更新时间
@@ -130,6 +144,10 @@ extension FlipClockLabel {
         animateValue = 0.0
         start()
     }
+}
+
+//MARK: - Animations
+extension FlipClockLabel {
     
     /// 下一个label开始动画 默认label起始角度
     ///
@@ -140,8 +158,6 @@ extension FlipClockLabel {
         t = CATransform3DRotate(t, CGFloat(.pi * Double(NextLabelStartValue)), -1, 0, 0)
         return t
     }
-    
-    // MARK: - 动画相关方法
     
     /// 更新动画label
     @objc private func updateAnimateLabel() {
@@ -161,7 +177,7 @@ extension FlipClockLabel {
             t = CATransform3DRotate(t, .pi, 0, 1, 0)
         }
         foldLabel.layer.transform = t
-       
+        
         // 当翻转到和屏幕垂直时，切换动画label的字
         foldLabel.text = animateValue >= 0.5 ? nextLabel.text : timeLabel.text
         
