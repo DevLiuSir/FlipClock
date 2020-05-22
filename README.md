@@ -21,10 +21,23 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/DevLiuSir/FlipClock?style=social)
 [![Twitter Follow](https://img.shields.io/twitter/follow/LiuChuan_.svg?style=social)](https://twitter.com/LiuChuan_)
 
+
+### Public Attribute
+|  Attribute name	|  Specific introduction of attributes	|
+| :------------: | :------------: | 
+| `date` | time |
+| `is12HourClock` | Whether it is a 12-hour clock (default: 24-hour clock. FALSE)|
+| `weekdayIsVisible` | Whether it is visible on working days and ordinary days. (Except Sunday and Saturday) any day |
+| `secondIsVisible` | Is the second visible |
+| `yearMonthDayIsVisible` | Is the year, month, and day visible |
+| `font` | Page Turn Clock Custom Font |
+| `textColor` | Text Color|
+
+
+
 ### Features
 - Add 12-hour system conversion, the default is 24-hour system.
 - Add more date content display
-
 
 
 ### Design
