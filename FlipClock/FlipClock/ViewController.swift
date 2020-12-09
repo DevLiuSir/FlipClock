@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     /// 时钟视图
     private lazy var flipClock: FlipClockView = {
         let flip = FlipClockView(frame: self.view.bounds)
-        flip.backgroundColor = .black
+        flip.flipClockTheme = .darkTheme
         flip.is12HourClock = true
         flip.secondIsVisible = true
         flip.weekdayIsVisible = true
@@ -25,33 +25,35 @@ class ViewController: UIViewController {
     /// 定时器
     var timer: Timer?
     
+    /* 视图控制器其视图, 即将消失、被覆盖、隐藏时，调用。**/
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.isHidden = false
+    }
+    
+    /* 视图控制器其视图, 即将加入窗口时，调用。**/
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // getUserDefaultsPlistURL()
         view.addSubview(flipClock)
         
         // 创建Timer对象
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimeLabel), userInfo: nil, repeats: true)
     }
     
-   
-    /** 状态栏风格 **/
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
-    /*
-     portrait   : 竖屏, 肖像
-     landscape  : 横屏, 风景画
-     
-     - 使用代码控制设备的方向. 优点: 可以在需要的时候, 单独处理
-     - 设置设备支持方向后,当前控制器 以及 字控制器 都会遵守设置的方向
-     - 如果播放视频, 通常是通过 modal 展现的!
-     */
-    
-    // MARK: - 设备的支持方向
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .landscape
+    private func getUserDefaultsPlistURL() {
+        let fileName = Bundle.main.bundleIdentifier!
+        let library = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first!
+        let preferences = library.appendingPathComponent("Preferences")
+        let userDefaultsPlistURL = preferences.appendingPathComponent(fileName).appendingPathExtension("plist")
+        print("Library directory:", userDefaultsPlistURL.path)
+        print("Preferences directory:", userDefaultsPlistURL.path)
     }
 }
 

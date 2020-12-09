@@ -12,9 +12,32 @@
 		6B15C6A420BC522A0032D040 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B15C6A220BC522A0032D040 /* Main.storyboard */; };
 		6B15C6A620BC522A0032D040 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B15C6A520BC522A0032D040 /* Assets.xcassets */; };
 		6B15C6A920BC522A0032D040 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B15C6A720BC522A0032D040 /* LaunchScreen.storyboard */; };
-		6BA2FC7520C2ED5D00D4DF3C /* FlipClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2FC7420C2ED5D00D4DF3C /* FlipClockView.swift */; };
-		6BA2FC7720C2EF7800D4DF3C /* FlipClockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2FC7620C2EF7800D4DF3C /* FlipClockItem.swift */; };
-		6BA2FC7920C304F200D4DF3C /* FlipClockLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA2FC7820C304F200D4DF3C /* FlipClockLabel.swift */; };
+		6BE4F0EA2598883A00EDDAF7 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0C62598883A00EDDAF7 /* SoundManager.swift */; };
+		6BE4F0EB2598883A00EDDAF7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0C72598883A00EDDAF7 /* Common.swift */; };
+		6BE4F0EC2598883A00EDDAF7 /* SecToneTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE4F0C92598883A00EDDAF7 /* SecToneTableVC.storyboard */; };
+		6BE4F0ED2598883A00EDDAF7 /* DisplaySettingsTableVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE4F0CA2598883A00EDDAF7 /* DisplaySettingsTableVC.storyboard */; };
+		6BE4F0EE2598883A00EDDAF7 /* SecToneTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0CB2598883A00EDDAF7 /* SecToneTableVC.swift */; };
+		6BE4F0EF2598883A00EDDAF7 /* SecToneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0CC2598883A00EDDAF7 /* SecToneTableViewCell.swift */; };
+		6BE4F0F02598883A00EDDAF7 /* DisplaySettingsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0CD2598883A00EDDAF7 /* DisplaySettingsTableVC.swift */; };
+		6BE4F0F22598883A00EDDAF7 /* SettingController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE4F0CF2598883A00EDDAF7 /* SettingController.storyboard */; };
+		6BE4F0F42598883A00EDDAF7 /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0D12598883A00EDDAF7 /* SettingController.swift */; };
+		6BE4F0F52598883A00EDDAF7 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0D32598883A00EDDAF7 /* AppData.swift */; };
+		6BE4F0F62598883A00EDDAF7 /* FlipClockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0D52598883A00EDDAF7 /* FlipClockItem.swift */; };
+		6BE4F0F72598883A00EDDAF7 /* ClockSecondSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0D62598883A00EDDAF7 /* ClockSecondSwitch.swift */; };
+		6BE4F0F82598883A00EDDAF7 /* BottomToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0D72598883A00EDDAF7 /* BottomToolbarView.swift */; };
+		6BE4F0F92598883A00EDDAF7 /* FlipClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0D82598883A00EDDAF7 /* FlipClockView.swift */; };
+		6BE4F0FA2598883A00EDDAF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BE4F0DA2598883A00EDDAF7 /* Localizable.strings */; };
+		6BE4F0FB2598883A00EDDAF7 /* LightTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0DE2598883A00EDDAF7 /* LightTheme.swift */; };
+		6BE4F0FC2598883A00EDDAF7 /* ThemeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0DF2598883A00EDDAF7 /* ThemeType.swift */; };
+		6BE4F0FD2598883A00EDDAF7 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E02598883A00EDDAF7 /* ThemeManager.swift */; };
+		6BE4F0FE2598883A00EDDAF7 /* ThemeManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E12598883A00EDDAF7 /* ThemeManagerProtocol.swift */; };
+		6BE4F0FF2598883A00EDDAF7 /* ThemeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E22598883A00EDDAF7 /* ThemeProtocol.swift */; };
+		6BE4F1002598883A00EDDAF7 /* DarkTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E32598883A00EDDAF7 /* DarkTheme.swift */; };
+		6BE4F1012598883A00EDDAF7 /* FlipClockLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E42598883A00EDDAF7 /* FlipClockLabel.swift */; };
+		6BE4F1022598883A00EDDAF7 /* pointer.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E62598883A00EDDAF7 /* pointer.wav */; };
+		6BE4F1032598883A00EDDAF7 /* dida.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E72598883A00EDDAF7 /* dida.wav */; };
+		6BE4F1042598883A00EDDAF7 /* flip.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E82598883A00EDDAF7 /* flip.wav */; };
+		6BE4F1052598883A00EDDAF7 /* digit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6BE4F0E92598883A00EDDAF7 /* digit.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +48,33 @@
 		6B15C6A520BC522A0032D040 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B15C6A820BC522A0032D040 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B15C6AA20BC522A0032D040 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6BA2FC7420C2ED5D00D4DF3C /* FlipClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipClockView.swift; sourceTree = "<group>"; };
-		6BA2FC7620C2EF7800D4DF3C /* FlipClockItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockItem.swift; sourceTree = "<group>"; };
-		6BA2FC7820C304F200D4DF3C /* FlipClockLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipClockLabel.swift; sourceTree = "<group>"; };
+		6BE4F0C62598883A00EDDAF7 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		6BE4F0C72598883A00EDDAF7 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		6BE4F0C92598883A00EDDAF7 /* SecToneTableVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SecToneTableVC.storyboard; sourceTree = "<group>"; };
+		6BE4F0CA2598883A00EDDAF7 /* DisplaySettingsTableVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DisplaySettingsTableVC.storyboard; sourceTree = "<group>"; };
+		6BE4F0CB2598883A00EDDAF7 /* SecToneTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecToneTableVC.swift; sourceTree = "<group>"; };
+		6BE4F0CC2598883A00EDDAF7 /* SecToneTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecToneTableViewCell.swift; sourceTree = "<group>"; };
+		6BE4F0CD2598883A00EDDAF7 /* DisplaySettingsTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplaySettingsTableVC.swift; sourceTree = "<group>"; };
+		6BE4F0CF2598883A00EDDAF7 /* SettingController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingController.storyboard; sourceTree = "<group>"; };
+		6BE4F0D12598883A00EDDAF7 /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		6BE4F0D32598883A00EDDAF7 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		6BE4F0D52598883A00EDDAF7 /* FlipClockItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipClockItem.swift; sourceTree = "<group>"; };
+		6BE4F0D62598883A00EDDAF7 /* ClockSecondSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockSecondSwitch.swift; sourceTree = "<group>"; };
+		6BE4F0D72598883A00EDDAF7 /* BottomToolbarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomToolbarView.swift; sourceTree = "<group>"; };
+		6BE4F0D82598883A00EDDAF7 /* FlipClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipClockView.swift; sourceTree = "<group>"; };
+		6BE4F0DB2598883A00EDDAF7 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6BE4F0DC2598883A00EDDAF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6BE4F0DE2598883A00EDDAF7 /* LightTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTheme.swift; sourceTree = "<group>"; };
+		6BE4F0DF2598883A00EDDAF7 /* ThemeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeType.swift; sourceTree = "<group>"; };
+		6BE4F0E02598883A00EDDAF7 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		6BE4F0E12598883A00EDDAF7 /* ThemeManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManagerProtocol.swift; sourceTree = "<group>"; };
+		6BE4F0E22598883A00EDDAF7 /* ThemeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeProtocol.swift; sourceTree = "<group>"; };
+		6BE4F0E32598883A00EDDAF7 /* DarkTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkTheme.swift; sourceTree = "<group>"; };
+		6BE4F0E42598883A00EDDAF7 /* FlipClockLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipClockLabel.swift; sourceTree = "<group>"; };
+		6BE4F0E62598883A00EDDAF7 /* pointer.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pointer.wav; sourceTree = "<group>"; };
+		6BE4F0E72598883A00EDDAF7 /* dida.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dida.wav; sourceTree = "<group>"; };
+		6BE4F0E82598883A00EDDAF7 /* flip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flip.wav; sourceTree = "<group>"; };
+		6BE4F0E92598883A00EDDAF7 /* digit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = digit.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +107,7 @@
 		6B15C69D20BC522A0032D040 /* FlipClock */ = {
 			isa = PBXGroup;
 			children = (
-				6BA2FC7320C2ED5D00D4DF3C /* FlipClockView */,
+				6BE4F0C42598883A00EDDAF7 /* Source */,
 				6B15C69E20BC522A0032D040 /* AppDelegate.swift */,
 				6B15C6A020BC522A0032D040 /* ViewController.swift */,
 				6B15C6A220BC522A0032D040 /* Main.storyboard */,
@@ -71,15 +118,94 @@
 			path = FlipClock;
 			sourceTree = "<group>";
 		};
-		6BA2FC7320C2ED5D00D4DF3C /* FlipClockView */ = {
+		6BE4F0C42598883A00EDDAF7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				6BA2FC7420C2ED5D00D4DF3C /* FlipClockView.swift */,
-				6BA2FC7620C2EF7800D4DF3C /* FlipClockItem.swift */,
-				6BA2FC7820C304F200D4DF3C /* FlipClockLabel.swift */,
+				6BE4F0D42598883A00EDDAF7 /* FlipClockView */,
+				6BE4F0C82598883A00EDDAF7 /* Controllers */,
+				6BE4F0C52598883A00EDDAF7 /* Utils */,
+				6BE4F0D22598883A00EDDAF7 /* Data */,
 			);
-			name = FlipClockView;
-			path = ../../FlipClockView;
+			name = Source;
+			path = ../../Source;
+			sourceTree = "<group>";
+		};
+		6BE4F0C52598883A00EDDAF7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6BE4F0C62598883A00EDDAF7 /* SoundManager.swift */,
+				6BE4F0C72598883A00EDDAF7 /* Common.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6BE4F0C82598883A00EDDAF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6BE4F0D12598883A00EDDAF7 /* SettingController.swift */,
+				6BE4F0CF2598883A00EDDAF7 /* SettingController.storyboard */,
+				6BE4F0CD2598883A00EDDAF7 /* DisplaySettingsTableVC.swift */,
+				6BE4F0CA2598883A00EDDAF7 /* DisplaySettingsTableVC.storyboard */,
+				6BE4F0CB2598883A00EDDAF7 /* SecToneTableVC.swift */,
+				6BE4F0C92598883A00EDDAF7 /* SecToneTableVC.storyboard */,
+				6BE4F0CC2598883A00EDDAF7 /* SecToneTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6BE4F0D22598883A00EDDAF7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6BE4F0D32598883A00EDDAF7 /* AppData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6BE4F0D42598883A00EDDAF7 /* FlipClockView */ = {
+			isa = PBXGroup;
+			children = (
+				6BE4F0E52598883A00EDDAF7 /* Assets */,
+				6BE4F0DD2598883A00EDDAF7 /* Theme */,
+				6BE4F0D92598883A00EDDAF7 /* Localizations */,
+				6BE4F0D82598883A00EDDAF7 /* FlipClockView.swift */,
+				6BE4F0D52598883A00EDDAF7 /* FlipClockItem.swift */,
+				6BE4F0E42598883A00EDDAF7 /* FlipClockLabel.swift */,
+				6BE4F0D62598883A00EDDAF7 /* ClockSecondSwitch.swift */,
+				6BE4F0D72598883A00EDDAF7 /* BottomToolbarView.swift */,
+			);
+			path = FlipClockView;
+			sourceTree = "<group>";
+		};
+		6BE4F0D92598883A00EDDAF7 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				6BE4F0DA2598883A00EDDAF7 /* Localizable.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		6BE4F0DD2598883A00EDDAF7 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				6BE4F0E12598883A00EDDAF7 /* ThemeManagerProtocol.swift */,
+				6BE4F0E02598883A00EDDAF7 /* ThemeManager.swift */,
+				6BE4F0E22598883A00EDDAF7 /* ThemeProtocol.swift */,
+				6BE4F0DF2598883A00EDDAF7 /* ThemeType.swift */,
+				6BE4F0DE2598883A00EDDAF7 /* LightTheme.swift */,
+				6BE4F0E32598883A00EDDAF7 /* DarkTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		6BE4F0E52598883A00EDDAF7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6BE4F0E62598883A00EDDAF7 /* pointer.wav */,
+				6BE4F0E72598883A00EDDAF7 /* dida.wav */,
+				6BE4F0E82598883A00EDDAF7 /* flip.wav */,
+				6BE4F0E92598883A00EDDAF7 /* digit.wav */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,8 +235,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = LC;
+				LastUpgradeCheck = 1220;
+				ORGANIZATIONNAME = "Liu Chuan";
 				TargetAttributes = {
 					6B15C69A20BC522A0032D040 = {
 						CreatedOnToolsVersion = 9.2;
@@ -126,6 +252,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 6B15C69220BC522A0032D040;
 			productRefGroup = 6B15C69C20BC522A0032D040 /* Products */;
@@ -142,9 +269,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE4F1032598883A00EDDAF7 /* dida.wav in Resources */,
 				6B15C6A920BC522A0032D040 /* LaunchScreen.storyboard in Resources */,
 				6B15C6A620BC522A0032D040 /* Assets.xcassets in Resources */,
+				6BE4F1042598883A00EDDAF7 /* flip.wav in Resources */,
+				6BE4F0F22598883A00EDDAF7 /* SettingController.storyboard in Resources */,
+				6BE4F0EC2598883A00EDDAF7 /* SecToneTableVC.storyboard in Resources */,
+				6BE4F0FA2598883A00EDDAF7 /* Localizable.strings in Resources */,
+				6BE4F0ED2598883A00EDDAF7 /* DisplaySettingsTableVC.storyboard in Resources */,
 				6B15C6A420BC522A0032D040 /* Main.storyboard in Resources */,
+				6BE4F1052598883A00EDDAF7 /* digit.wav in Resources */,
+				6BE4F1022598883A00EDDAF7 /* pointer.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,11 +290,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BA2FC7720C2EF7800D4DF3C /* FlipClockItem.swift in Sources */,
-				6BA2FC7520C2ED5D00D4DF3C /* FlipClockView.swift in Sources */,
-				6BA2FC7920C304F200D4DF3C /* FlipClockLabel.swift in Sources */,
+				6BE4F0F92598883A00EDDAF7 /* FlipClockView.swift in Sources */,
+				6BE4F0F72598883A00EDDAF7 /* ClockSecondSwitch.swift in Sources */,
+				6BE4F0F42598883A00EDDAF7 /* SettingController.swift in Sources */,
+				6BE4F0FF2598883A00EDDAF7 /* ThemeProtocol.swift in Sources */,
+				6BE4F0EB2598883A00EDDAF7 /* Common.swift in Sources */,
+				6BE4F0FB2598883A00EDDAF7 /* LightTheme.swift in Sources */,
+				6BE4F0EE2598883A00EDDAF7 /* SecToneTableVC.swift in Sources */,
 				6B15C6A120BC522A0032D040 /* ViewController.swift in Sources */,
+				6BE4F0EF2598883A00EDDAF7 /* SecToneTableViewCell.swift in Sources */,
+				6BE4F0F02598883A00EDDAF7 /* DisplaySettingsTableVC.swift in Sources */,
+				6BE4F0FD2598883A00EDDAF7 /* ThemeManager.swift in Sources */,
 				6B15C69F20BC522A0032D040 /* AppDelegate.swift in Sources */,
+				6BE4F1012598883A00EDDAF7 /* FlipClockLabel.swift in Sources */,
+				6BE4F0F82598883A00EDDAF7 /* BottomToolbarView.swift in Sources */,
+				6BE4F0EA2598883A00EDDAF7 /* SoundManager.swift in Sources */,
+				6BE4F1002598883A00EDDAF7 /* DarkTheme.swift in Sources */,
+				6BE4F0F52598883A00EDDAF7 /* AppData.swift in Sources */,
+				6BE4F0F62598883A00EDDAF7 /* FlipClockItem.swift in Sources */,
+				6BE4F0FC2598883A00EDDAF7 /* ThemeType.swift in Sources */,
+				6BE4F0FE2598883A00EDDAF7 /* ThemeManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +332,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		6BE4F0DA2598883A00EDDAF7 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BE4F0DB2598883A00EDDAF7 /* zh-Hans */,
+				6BE4F0DC2598883A00EDDAF7 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -189,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -210,6 +370,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -235,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -249,6 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -270,6 +432,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -289,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -303,9 +466,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FlipClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LC.FlipClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DevLiuSir.FlipClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,9 +481,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = FlipClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.LC.FlipClock;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DevLiuSir.FlipClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

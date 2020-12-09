@@ -29,12 +29,20 @@ class FlipClockLabel: UIView {
         }
     }
     
-    /// 文字颜色
-    var textColor: UIColor? {
+    /// 当前文字颜色
+    var currentTextColor: UIColor? = ThemeManager.sharedInstance.currentTheme.textColor {
         didSet {
-            timeLabel.textColor = textColor
-            foldLabel.textColor = textColor
-            nextLabel.textColor = textColor
+            timeLabel.textColor = currentTextColor
+            foldLabel.textColor = currentTextColor
+            nextLabel.textColor = currentTextColor
+        }
+    }
+    /// 当前背景色
+    var currentBackgroundColor: UIColor? = ThemeManager.sharedInstance.currentTheme.labelBackgroudColor {
+        didSet {
+            timeLabel.backgroundColor = currentBackgroundColor
+            foldLabel.backgroundColor = currentBackgroundColor
+            nextLabel.backgroundColor = currentBackgroundColor
         }
     }
     
@@ -73,7 +81,6 @@ class FlipClockLabel: UIView {
     /// 放置label的容器
     private lazy var labelContainer: UIView = {
         let labelContainer = UIView()
-        labelContainer.backgroundColor = UIColor(red: 46 / 255.0, green: 43 / 255.0, blue: 46 / 255.0, alpha: 1)
         return labelContainer
     }()
     
@@ -124,10 +131,10 @@ extension FlipClockLabel {
     /// - Parameter label: UILabel
     private func configLabel(_ label: UILabel) {
         //label.textAlignment = .center
-        label.textColor = UIColor.lightText
         label.font = UIFont(name: "HelveticaNeue-CondensedBold", size: 200)
         label.layer.masksToBounds = true
-        label.backgroundColor = #colorLiteral(red: 0.06778538942, green: 0.06845653189, blue: 0.06845653189, alpha: 1)
+        label.textColor = currentTextColor
+        label.backgroundColor = currentBackgroundColor
     }
 
     /// 更新时间

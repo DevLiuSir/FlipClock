@@ -43,17 +43,6 @@ class FlipClockItem: UIView {
         }
     }
     
-    /// 文字颜色
-    var textColor: UIColor? {
-        didSet {
-            leftLabel.textColor = textColor
-            rightLabel.textColor = textColor
-        }
-    }
-
-    /// 是否第一次设置时间
-    var firstSetTime = false
-    
     //MARK: Lazy loading
     
     /// 左边label
@@ -71,7 +60,7 @@ class FlipClockItem: UIView {
     /// 分割线
     private lazy var line: UIView = {
         let line = UIView()
-        line.backgroundColor = .black
+        line.backgroundColor = ThemeManager.sharedInstance.currentTheme.lineColor
         return line
     }()
     
@@ -156,4 +145,13 @@ extension FlipClockItem {
         rightLabel.updateTime(current, nextTime: time)
     }
     
+    /// 更新Label的主题颜色
+    /// - Parameter theme: 当前主题
+    public func updateLabelThemeColor(_ theme: ThemeProtocol) {
+        leftLabel.currentBackgroundColor = theme.labelBackgroudColor
+        rightLabel.currentBackgroundColor = theme.labelBackgroudColor
+        leftLabel.currentTextColor = theme.textColor
+        rightLabel.currentTextColor = theme.textColor
+        line.backgroundColor = theme.lineColor
+    }
 }

@@ -12,10 +12,30 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    /// 当前界面支持的方向（默认：只能横屏，不能竖屏显示）
+    var interfaceOrientations: UIInterfaceOrientationMask = [.landscapeLeft, .landscapeRight] {
+        didSet {
+            print(UIDevice.current.orientation.isLandscape)
+            
+            if interfaceOrientations == .portrait {                    // 强制设置成竖屏
+                UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue,forKey: "orientation")
+            }else if !interfaceOrientations.contains(.portrait) {      // 强制设置成横屏
+                UIDevice.current.setValue(UIInterfaceOrientation.landscapeLeft.rawValue,forKey: "orientation")
+            }
+        }
+    }
+    
+    // 返回当前界面支持的旋转方向
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return interfaceOrientations
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // 读取本地存储的值，从而设置主题模式
+        ThemeManager.sharedInstance.currentTheme = UserDefaults.standard.bool(forKey: "CurrentTheme") ? DarkTheme() : LightTheme()
+        
         return true
     }
 
