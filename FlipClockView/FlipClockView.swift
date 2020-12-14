@@ -177,9 +177,12 @@ extension FlipClockView {
         
         /// 间距
         let margin: CGFloat = 0.07 * bounds.size.width
-        /// 每个item的宽度
-        let itemW: CGFloat = (bounds.size.width - 4 * margin) / 3
-        /// 每个item的Y值
+        /// The width of each item
+        var itemW: CGFloat = (bounds.size.width - 4 * margin) / 3
+        if(!secondIsVisible){
+            itemW = CGFloat.init((bounds.size.width - 3 * margin) / 2)
+        }
+        /// Y value of each item
         let itemY: CGFloat = (bounds.size.height - itemW) / 2
         
         hourItem.frame = CGRect(x: margin, y: itemY, width: itemW, height: itemW)
