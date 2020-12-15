@@ -1,5 +1,5 @@
-
-<img  src="Design/FlipClock.png" height="400"></p>
+<p align="center">
+<img src="Design/FlipClock.png" height="400"></p>
 
 <p align="center"> <b>FlipClock It's a minimalist page turning clock. </b></p>
 
@@ -24,6 +24,11 @@
 </p>
 
 
+### GIF Preview
+<p align="center">
+<img src="Design/Preview.gif" width=800> 
+
+
 ### Public Attribute
 |  Attribute name	|  Specific introduction of attributes |
 | :------------: | :------------: | 
@@ -38,7 +43,8 @@
 
 
 ### Features
-**2020-12-01**
+
+##### 2020-12-01
 
 - Add clock localization (Chinese, English)
 - Add bottom view toolbar
@@ -48,10 +54,11 @@
 - Fix the interface layout when seconds are not visible.
 - Add user setting function.
 
-**2019-03-17**
+##### 2019-03-17
 
 - Add 12-hour system conversion, the default is 24-hour system.
 - Add more date content display.
+
 
 ### Design
 Description | Preview |
