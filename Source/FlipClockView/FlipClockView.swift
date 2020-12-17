@@ -252,9 +252,7 @@ extension FlipClockView {
 extension FlipClockView {
     
     private func configUI() {
-        // 点击手势
-        let tap = UITapGestureRecognizer(target: self, action: #selector(tapClick(_:)))
-        addGestureRecognizer(tap)
+        configGestureRecognizer()
         
         // 取出本地存储值
         secondIsVisible = UserDefaults.standard.bool(forKey: "SecondIsVisible")
@@ -272,6 +270,19 @@ extension FlipClockView {
         minuteItem.addSubview(weekdayLabel)
         secondItem.addSubview(yearToDateLabel)
         addSubview(bottomToolbarView)
+    }
+    
+    private func configGestureRecognizer() {
+        // 点击手势
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+        tap.numberOfTapsRequired = 1      // 单击
+        //tap.numberOfTapsRequired = 2    // 双击
+        addGestureRecognizer(tap)
+        
+        /// 平移手势
+        let panGesture = UIPanGestureRecognizer.init(target: self, action: #selector(handlePan(_:)))
+        panGesture.minimumNumberOfTouches = 1   // 最小手指数: 单指滑动
+        addGestureRecognizer(panGesture)
     }
 }
 
@@ -439,8 +450,8 @@ extension FlipClockView {
 // MARK: - Actions
 extension FlipClockView {
     
-    /// 点击手势
-    @objc private func tapClick(_ tap: UITapGestureRecognizer) {
+    /// 处理点击
+    @objc private func handleTap(_ tap: UITapGestureRecognizer) {
         /// 点击时, 相对于 `bottomToolbarView` 的位置
         let tapPoint = tap.location(in: bottomToolbarView)
         
@@ -449,6 +460,30 @@ extension FlipClockView {
             hiddenBottomToolbarView()
         }else {
             showBottomToolbarView()
+        }
+    }
+    
+    /// 处理滑动（改变  `屏幕亮度` ）
+    @objc func handlePan(_ recognizer: UIPanGestureRecognizer) {
+        /// 获取当前屏幕的亮度
+        var brightness: Float = Float(UIScreen.main.brightness)
+        
+        if recognizer.state == .changed || recognizer.state == .ended {
+            /// 滑动速度
+            let velocity: CGPoint = recognizer.velocity(in: self)
+            
+            if velocity.y > 0 {     // Y：上、下滑动
+                brightness -= 0.01  // 降低亮度
+                print("降低亮度 in pan  \(brightness)")
+                // 设置屏幕的亮度级别
+                UIScreen.main.brightness = CGFloat(brightness)
+            }else {
+                brightness += 0.01  // 增加亮度
+                print("增加亮度 in pan \(brightness)")
+                // 设置屏幕的亮度级别
+                UIScreen.main.brightness = CGFloat(brightness)
+            }
+            print("当前设置后的屏幕亮度： \(UIScreen.main.brightness)")
         }
     }
     
