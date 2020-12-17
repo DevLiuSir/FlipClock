@@ -44,6 +44,10 @@
 
 ### Features
 
+##### 2020-12-17
+- Add sliding gestures to control device screen brightness.
+- use new application icon
+
 ##### 2020-12-01
 
 - Add clock localization (Chinese, English)
